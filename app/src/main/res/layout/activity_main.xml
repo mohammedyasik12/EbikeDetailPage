@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    >
+
+//LAYOUT-1
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:tint="#000"></ImageView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_fav"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/ic_outline_favorite_border_24"
+            app:tint="#fff"></ImageView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+    //LAYOUT-2
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilorybold"
+            android:text="KOLLTER ES1 PRO-M"
+            android:textColor="#000"
+            android:textSize="25sp"></TextView>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:background="@drawable/background_fav"
+            android:backgroundTint="#EDEDED"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_menu"></ImageView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    //LAYOUT-3
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="25dp"/>
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            app:ci_drawable="@drawable/black_radius_circle_indicator"
+            app:ci_drawable_unselected="@drawable/white_radius_circle_indicator"
+            android:layout_height="40dp"/>
+
+
+    //LAYOUT-4
+
+    <com.skyhope.showmoretextview.ShowMoreTextView
+        android:id="@+id/description_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="15dp"
+        android:lineSpacingExtra="5dp"
+        android:textColor="#2F4858"
+        android:fontFamily="@font/giloryregular"
+        android:textSize="17sp" />
+
+    //LAYOUT-5
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilorybold"
+        android:text="Specification"
+        android:layout_marginTop="15dp"
+        android:textColor="#000"
+        android:textSize="18sp"></TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/liear_hold"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilorymedi"
+                android:text="Rotating Speed:"
+                android:textColor="#666666"
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/gilorymedi"
+                android:text="6000 RPM"
+                android:textColor="#000"
+                android:textSize="18sp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilorymedi"
+                android:text="Rated Voltage:"
+                android:textColor="#666666"
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/gilorymedi"
+                android:text="72V (DC) "
+                android:textColor="#000"
+                android:textSize="18sp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilorymedi"
+                android:text="Gear Ratio:"
+                android:textColor="#666666"
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/gilorymedi"
+                android:text="1:8"
+                android:textColor="#000"
+                android:textSize="18sp"></TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_milky"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="15dp"
+              android:src="@drawable/ic_greycolor"></ImageView>
+
+            <ImageView
+                android:id="@+id/image_blue"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_blucolor"></ImageView>
+
+            <ImageView
+                android:id="@+id/image_pink"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_pinkcolor"></ImageView>
+
+            <ImageView
+                android:id="@+id/image_black"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_blackcolor"></ImageView>
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/addcart_back"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="25dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="25dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/ic_carybag"
+                app:tint="#fff"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/gilorybold"
+                android:text="$8,450"
+                android:textColor="#fff"
+                android:textSize="20sp"></TextView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+</ScrollView>
