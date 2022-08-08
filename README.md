@@ -1,2 +1,6 @@
 # EbikeDetailPage
-<img width="1440" alt="Dribbble shot HD - 1" src="https://user-images.githubusercontent.com/109450288/183340126-6bc57c3c-ec5c-4602-8e6a-b7938ce62b0f.png">
+
+
+
+https://user-images.githubusercontent.com/109450288/183434158-4c299f85-1071-4de5-bb1f-44e9902db088.mp4
+
